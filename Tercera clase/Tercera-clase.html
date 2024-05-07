@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitBash</title>
+</head>
+<body>
+    <h1>Comandos para Git & GitBash</h1>
+
+    <!--Se hace solo una vez por carpeta-->
+    <p>git init</p>
+
+    <!--Configuramos nuestra cuenta de Git en la terminal-->
+    <p>git config --goblal user.name "GonzaloDominguez"</p>
+    <p>git config --global user.email "email"</p>
+
+    <!--Con este comando podemos ver en que rama estamos del archivo-->
+    <p>git branch</p>
+
+    <!--Podemos crar una nueva rama-->
+    <p>git checkout -b (nombre de la rama)</p>
+
+    <!--Combinamos una rama con el archivo main-->
+    <p>git marge "nombre del main" "nombre de la rama"</p>
+
+    <!--Vemos el estado de nuestro repo-->
+    <p>git status</p>
+
+    <!--Agregamos nuestros archivos a nuestro repo-->
+    <p>git add (nombre del archivo o un punto para agregar todo)</p>
+
+    <!--Podemos restaurar los cambios, antes de hacer commit-->
+    <p>git restore</p>
+
+    <!--Indicar que es lo que vamos a subir-->
+    <p>git commit -m "nombre de los cambios o archivos que subimos"</p>
+
+    <!--Vincular nuestros archivos a una carpeta de github-->
+    <p>git remote add origin "agregar link que nos da github</p>
+
+    <!--Si tenemos diferentes ramas y queremos subir lo modificado al archivos main-->
+    <p>git push -u origin main</p>
+
+    <!--Con este comando te descargas archivos que estan en github pero que uno todavia no tiene en su pc-->
+    <p>git pull</p>
+
+
+
+
+
+</body>
+</html>
