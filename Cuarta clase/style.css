@@ -1,0 +1,37 @@
+/*Selector universal*/
+*{
+    font-family: sans-serif;
+}
+/*Selector de etiquetas*/
+h1 {
+    color: blue;
+}
+/*Selector por ID*/
+#elemento_unido{
+    color: aquamarine;
+}
+/*Selector por clase*/
+.items {
+    background-color: beige;
+}
+/*Selector hijo directo*/
+#lista>li{
+    color: blueviolet;
+}
+/*Selector de hermanos*/
+li + li {
+    color: brown;
+}
+
+/*Unidades absolutas PIXELES, PULGADAS*/
+
+/*Unidades relativas EM REM EM % VH VW*/
+
+body {
+    font-size: 16px;
+    background-image: url(../Imagenes/Yo\ cv.jpeg);
+}
+
+h2 {
+    box-shadow: 0 0 .25rem.5rem teal;
+}
