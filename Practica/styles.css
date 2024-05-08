@@ -1,0 +1,13 @@
+header {
+    background-color: rgb(86, 165, 255);
+}
+header nav {
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
