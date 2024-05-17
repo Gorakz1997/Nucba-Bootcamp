@@ -1,52 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagenes/icons8-código-fuente-64.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
     <title>Gonzalo Dominguez</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#sobre-mi">Sobre Mi</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
-
+<body class="contenedor">
     <main>
-        <section id="sobre-mi">
-            <h1>Gonzalo Dominguez</h1>
+        <!--Encabezado-->
+        <header class="header">
+            <nav>
+                <img src="../Imagenes/icons8-código-fuente-64.png" alt="Icono de incio">
+                <ul class="nav">
+                    <li class="nav-link"><a href="#about">Sobre Mi</a></li>
+                    <li class="nav-link"><a href="#proyects">Proyectos</a></li>
+                    <li class="nav-link"><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <p>Desarrolador Web full stack</p>
+        <!--seccion sobre mi-->
+        <div id="about" class="seccion">
+            <!--Imagen e informacion personal-->
+            <div class="personal_information">
+                
+                <div class="img">
+                    <img src="../Imagenes/Yo cv.jpeg" alt="Gonzalo Dominguez" class="imagen-circular">
+                </div>
+                
+                <div class="info">
+                    <h1>Gonzalo Dominguez</h1>
+                    <p>Front-end Developer</p>
+                    <p>Buenos Aires, Argentina</p>
 
-            <img src="../Imagenes/Yo cv.jpeg" alt="Foto de perfil de Gonzalo Dominguez">
+                    <div class="redes">
+                        <a href="https://github.com/Gorakz1997" target="_blank"><img src="../Imagenes/github.png" alt="Logo github"></a>
+                        <a href="www.linkedin.com/in/gonzalo-ezequiel-domínguez" target="_blank"><img src="../Imagenes/linkedin.png" alt="Logo linkeding"></a>
+                        <a href="https://www.instagram.com/gonza_domingueez?igsh=MTFvbnV5ZG9mc2NwMA==" target="_blank"><img src="../Imagenes/ig.png" alt="Logo instagram"></a>
+                    </div>
+                </div>
+                <!--Logo redes sociales-->
+                
+            </div>
+            <!--Informacion sobre mi-->
+            
+            <section id="about_me">
+                <h2>Sobre mi</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quos. Aliquid culpa corrupti labore iure laudantium. Quasi laborum libero rerum ab totam, assumenda quia nihil labore vel, aut est minima!</p>
+            </section>
 
-            <p>Hola! Soy Gonzalo Dominguez, un apasionado estudiante de Administración de Empresas en constante búsqueda de nuevos desafíos. Actualmente, estoy ampliando mis horizontes en el mundo del desarrollo web full stack a través del programa de estudios en Nucba. Mi portfolio es un reflejo de mi viaje de aprendizaje, donde podrás encontrar una combinación única de habilidades comerciales y técnicas de desarrollo web. Desde proyectos de gestión empresarial hasta aplicaciones web interactivas, cada elemento en mi portfolio cuenta una historia de crecimiento y dedicación. ¡Bienvenido a explorar mi mundo donde los negocios y la tecnología se encuentran en perfecta armonía!</p>
+        </div>
+
+        <!--Proyectos-->
+        <section id="proyects">
+            <div class="proyectos">
+                <h2>Mis proyectos</h2>
+                <p>Aqui podes ver la lista de mis proyectos</p>
+            </div>
+            
+
+            <!--tarjetas de proyectos-->
+            <section class="tarjetas">
+                <div class="tarjeta">
+                    <img src="" alt="proyecto1">
+                        <h3>Proyecto 1</h3>
+                        <p>Breve descripcion del proyecto</p>
+                    <div class="botones"> 
+                        <a href="" class="boton-ver">Ver</a>
+                        <a href="" class="boton-redes">GitHub</a>
+                    </div>
+                        
+                </div>
+
+                <div class="tarjeta">
+                    <img src="" alt="proyecto1">
+                    <h3>Proyecto 2</h3>
+                    <p>Breve descripcion del proyecto</p>
+                    <div class="botones">
+                        <a href="" class="boton-ver"><p>Ver</p></a>
+                        <a href="" class="boton-redes">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="" alt="proyecto1">
+                    <h3>Proyecto 3</h3>
+                    <p>Breve descripcion del proyecto</p>
+                    <div class="botones">
+                        <a href="" class="boton-ver">Ver</a>
+                        <a href="" class="boton-redes">GitHub</a>
+                    </div>
+                </div>
+            </section>
+            
         </section>
-    
-        <section id="proyectos">
-            <h2>Proyectos</h2>
 
-            <p>En esta seccion voy a ir publicando mis proyectos a medida que vayan avanzando las clases en NUCBA :)</p>
-        </section>
-    
-        <section id="contacto">
-            <h2>Contactate conmigo</h2>
-            <form action="">
+        <!--Formulario de contacto-->
+        <section id="contact" class="seccion">
+            <div>
+                <h2>Ponerse en contacto</h2>
+                <p>No dude en comunicarse conmigo para cualquier consulta u oportunidad de colaboración.</p>
+            </div>
+
+            <!--Formulario-->
+            <form action="" class="formulario">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Ingrese su email">
+
                 <label for="mensaje">Ingrese su mensaje aqui</label>
                 <textarea name="mensaje" id="mensaje"></textarea>
+
                 <button type="submit">Enviar mensaje</button>
             </form>
         </section>
-    </main>
 
-    <footer>
-        <p>Derechos de autor Gonzalo Dominguez</p>
-    </footer>
+        <!--Pie de pagina-->
+        <footer class="footer">
+            <p>&copy; Todos los derechos reservados.</p>
+
+            <a href="#contact">Contacto</a>
+
+            <a href="www.linkedin.com/in/gonzalo-ezequiel-domínguez" target="_blank">Linkedin</a>
+
+            <a href="https://github.com/Gorakz1997" target="_blank">GitHub</a>
+
+            <a href="https://www.instagram.com/gonza_domingueez?igsh=MTFvbnV5ZG9mc2NwMA==" target="_blank">Instagram</a>
+        </footer>
+
+    </main>
 </body>
 </html>

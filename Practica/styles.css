@@ -1,45 +1,221 @@
+/*Hay que recetear la pagina antes de empezar a trabajar*/
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.contenedor {
+/*Navbar*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-header {
     background-color: rgb(0, 119, 182);
-    padding: 20px;
+    padding: 1rem;
+}
+
+.header nav img {
+    filter: brightness(0) invert(1); /*Cambie el logo a color blanco*/
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav li a:hover{
+    text-decoration: underline;
+    position: relative;
+    text-underline-offset: 0.25rem; /*Separe la linea unos 4 px*/
+}
+
+/*Sobre Mi*/
+#about {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh; /*define la visibiliad al 100% de la pantalla*/
+    width: auto;
+}
+
+.personal_information {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    margin-top: -200px;
 }
 
-.logo {
-    margin-right: auto;
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-nav a {
-    list-style: none;
-    margin-right: 20px;
-    padding: 0;
-    color: white;
+.imagen-circular{
+    width: 30vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.info p:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.redes a img {
+    width: 40px;
+    height: auto;
+}
+
+/*Informacion sobre mi*/
+#about_me {
+    background-color:#e5e7eb ;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about_me h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 119, 182);
+    font-size: 3rem;
+    margin: 20px;
+    letter-spacing: -0.05em;
+}
+
+#about_me p {
+    font-size: 1.25rem;
+    width: 40%;
+    text-align: center;
+    line-height: 1.625rem;
+}
+
+/*Proyectos*/
+#proyects {
+    background-color: rgb(0, 119, 182);
+    color: #e5e7eb;
+}
+.proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proyectos h2 {
+    margin-top: 20px;
+    font-size: 3rem;
+    letter-spacing: -0.05em;
+}
+
+.proyectos p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Tarjetas*/
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: white;
+    width: 400px; /* Ancho de la tarjeta */
+    height: 300px;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 {
+    color: rgb(0, 119, 182);;
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.tarjeta p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.botones {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+.botones a {
+    text-align: center;
     text-decoration: none;
-    position: relative;
+}
+.boton-ver {
+    background-color: rgb(0, 119, 182);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 30px;
+    align-self: center;
 }
 
-nav a:hover{
-    border-bottom: 2px solid white;
+.boton-redes {
+    border: black 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 30px;
+    align-self: center;
 }
-
-
-
-
-
