@@ -26,18 +26,25 @@ nav {
 .nav {
     list-style: none;
     display: flex;
-    gap: 20px;
+
 }
 
 .nav li a {
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 14px 16px;
+    transition:0.2s;
 }
 
 .nav li a:hover{
     text-decoration: underline;
-    position: relative;
-    text-underline-offset: 0.25rem; /*Separe la linea unos 4 px*/
+    transform: scale(1.1);
+    padding:14px 16px;
+    text-underline-offset: 0.30rem; /*Separe la linea unos 4 px*/
 }
 
 /*Sobre Mi*/
@@ -47,8 +54,8 @@ nav {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    height: 100vh; /*define la visibiliad al 100% de la pantalla*/
-    width: auto;
+    padding: 200px 50px; /*define la visibiliad al 100% de la pantalla*/
+    
 }
 
 .personal_information {
@@ -88,22 +95,29 @@ nav {
 
 .info p {
     font-size: 1.2rem;
-    color: black;
+    color: black
 }
 
 .info p:nth-child(3) {
     margin-bottom: 10px;
 }
 
+/*Links a redes sociales*/
 .redes {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .redes a img {
-    width: 40px;
+    width: 45px;
     height: auto;
+    transition: 0.1s;
+}
+
+.redes a img:hover {
+    transform: scale(1.2); /*Hace que los logos se agranden pero no influye en el movimiento de los demas elementos en el html*/
+    transition: 0.1s;
 }
 
 /*Informacion sobre mi*/
@@ -128,6 +142,7 @@ nav {
 }
 
 #about_me p {
+    color: black;
     font-size: 1.25rem;
     width: 40%;
     text-align: center;
@@ -136,8 +151,9 @@ nav {
 
 /*Proyectos*/
 #proyects {
-    background-color: rgb(0, 119, 182);
-    color: #e5e7eb;
+    background-color: white;
+    color: rgb(0, 119, 182);
+    padding-bottom: 50px;
 }
 .proyectos {
     display: flex;
@@ -157,6 +173,7 @@ nav {
     margin-bottom: 20px;
     margin-top: 10px;
     text-align: center;
+    color: black;
 }
 
 /*Tarjetas*/
@@ -172,7 +189,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: white;
+    background: #e5e7eb;
     width: 400px; /* Ancho de la tarjeta */
     height: 300px;
     padding: 20px;
@@ -182,17 +199,19 @@ nav {
 }
 
 .tarjeta h3 {
-    color: rgb(0, 119, 182);;
-    margin: 0 0 10px 0;
+    color: rgb(0, 119, 182);
+    padding: 5px 0 5px 0;
     font-size: 1.5rem;
 }
 
 .tarjeta p {
-    margin: 0;
+    padding-bottom: 5px;
     font-size: 1rem;
     color: #555;
+    font-weight: bold;
 }
 
+/*Botones tarjetas*/
 .botones {
     margin-top: 10px;
     display: flex;
@@ -202,20 +221,175 @@ nav {
     text-align: center;
     text-decoration: none;
 }
+
+.botones .boton-ver {
+    color: white;
+}
+
+.botones .boton-redes {
+    color: rgb(0, 119, 182);
+    border-color: #e5e7eb;
+}
+
 .boton-ver {
     background-color: rgb(0, 119, 182);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100px;
-    height: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
     align-self: center;
+    transition: 0.2s;
 }
 
 .boton-redes {
-    border: black 1px solid;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100px;
-    height: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
     align-self: center;
+    transition: 0.2s;
 }
+
+.boton-redes:hover {
+    border-color: #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-self: center;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.boton-ver:hover {
+    background-color: rgb(0, 119, 182);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-self: center;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+/*Imagenes tarjetas */
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    box-sizing: content-box;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*Formulario de contacto*/
+#contact {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.formulario-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario-contacto h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    letter-spacing: -0.05em;
+    color: rgb(0, 119, 182);
+}
+
+.formulario-contacto p {
+    color: black;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Formulario*/
+.form {
+    width: 400px;
+    padding-top: 10px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    padding: 15px;
+    border-radius:10px;
+    border: none;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 119, 182);
+    color: white;
+    transition: 0.2s;
+}
+
+.formulario button:hover {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 119, 182);
+    color: white;
+    transition: 0.2s;
+    transform: scale(1.02);
+}
+
+/*Footer*/
+.footer {
+    background-color: rgb(0, 119, 182);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer p {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
+    margin-right: 20px;
+}
+
+.footer li a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    transition:0.2s;
+}
+
+.footer li a:hover{
+    transform: scale(1.1);
+}
+
