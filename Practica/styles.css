@@ -332,6 +332,7 @@ nav {
 
 .formulario textarea {
     resize: none;
+    padding: 30px;
 }
 
 .formulario button {
