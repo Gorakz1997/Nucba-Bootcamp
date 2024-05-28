@@ -1,0 +1,43 @@
+* {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  rgb(0, 119, 182);
+}
+
+nav img {
+    filter: brightness(0) invert(1); /*Cambie el logo a color blanco*/
+}
+
+.items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items ul li {
+    list-style: none;
+}
+
+.items a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 14px 16px;
+    transition:0.2s;
+}
+
+.items li a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    padding:14px 16px;
+    text-underline-offset: 0.30rem; /*Separe la linea unos 4 px*/
+}
